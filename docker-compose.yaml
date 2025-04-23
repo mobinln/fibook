@@ -8,7 +8,7 @@ services:
         volumes:
             - ./:/home/src
         entrypoint: ["/app/run_app.sh"]
-        command: ["mage", "start", "fibook"]
+        command: ["mage", "start", "data"]
         working_dir: /home/src
         depends_on:
             - postgres
