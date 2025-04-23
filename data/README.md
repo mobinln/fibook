@@ -1,0 +1,1 @@
+- To run the mage.ai: `mage start fibook`

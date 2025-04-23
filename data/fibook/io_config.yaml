@@ -1,0 +1,4 @@
+version: 0.1.1
+default:
+  DUCKDB_DATABASE: database
+  DUCKDB_SCHEMA: main
