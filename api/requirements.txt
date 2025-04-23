@@ -12,5 +12,5 @@ apscheduler
 pandas
 requests
 duckdb
-psycopg2
+psycopg2-binary
 python-dotenv

@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Loader2 } from "lucide-react";
-import { useNavigate } from "react-router";
 
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -39,7 +38,7 @@ export default function LoginForm() {
     setIsLoading(true);
 
     try {
-      const response = await login(data);
+      const response = await login(data as { username: string; password: string });
       setToken(response.access_token);
       const user = await getMe();
       setUser(user);
